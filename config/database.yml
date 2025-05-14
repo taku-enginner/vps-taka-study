@@ -11,7 +11,9 @@ default: &default
 development:
   <<: *default
   database: app_name_development
-
+  username: dbuser
+  password: cent_taku_enginner
+  
 test:
   <<: *default
   database: app_name_test
@@ -22,4 +24,4 @@ production:
   database: service1_db
   host: localhost
   username: dbuser
-  password: centos_taku_enginner
+  password: cent_taku_enginner
