@@ -13,7 +13,6 @@ development:
   database: service1_db
   username: root
   host: localhost
-  password: ""
 
 test:
   <<: *default
