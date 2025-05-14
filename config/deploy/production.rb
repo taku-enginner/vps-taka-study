@@ -63,3 +63,11 @@
 
 # production環境固有の設定を記述
 server "taka-study.fun", user: "vpsuser", port: "50022", roles: %w[app db web]
+
+set :ssh_options, {
+  user: 'vpsuser', # 念のため明示
+  port: 22,        # もし違えば修正（あなたの設定では50022）
+  keys: ['~/.ssh/id_rsa'],
+  forward_agent: false,
+  auth_methods: %w(publickey)
+}
