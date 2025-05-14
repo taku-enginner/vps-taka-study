@@ -25,5 +25,4 @@ production:
   database: service1_db
 
   username: root
-  password: ""
   socket: /var/lib/mysql/mysql.sock
