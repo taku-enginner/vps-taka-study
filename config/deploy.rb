@@ -41,14 +41,14 @@ set :deploy_to, "/var/www/html/hoge"
 set :branch, "main"
 
 set :rbenv_type, :user
-set :rbenv_ruby, '3.3.6'
+set :rbenv_ruby, "3.3.6"
 # set :rbenv_path, '/usr/local/rbenv'
 append :linked_files, "config/database.yml", "config/master.key"
-append :linked_dirs, '.bundle', "log", "tmp/pids", "tmp/cache", "tmp/sockets"
+append :linked_dirs, ".bundle", "log", "tmp/pids", "tmp/cache", "tmp/sockets"
 
 namespace :deploy do
   task :puma_restart_again do
-    invoke "puma:stop"
+    invoke  "puma:stop"
     invoke! "puma:start"
   end
 end

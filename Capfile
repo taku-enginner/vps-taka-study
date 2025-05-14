@@ -9,10 +9,7 @@ require "capistrano/rails/assets"
 require "capistrano/rails/migrations"
 
 require "capistrano/puma"
-require "capistrano/puma/nginx"
-# install_plugin Capistrano::Puma
-# install_plugin Capistrano::Puma::Nginx
-
+install_plugin Capistrano::Puma
 
 
 # Load the SCM plugin appropriate to your project:
