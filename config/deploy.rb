@@ -36,5 +36,5 @@ lock "~> 3.19.2"
 # set :ssh_options, verify_host_key: :secure
 
 set :application, "vps-taka-study"
-set :repo_url, 'git@github.com:taku-enginner/vps-taka-study.git'
+set :repo_url, "git@github.com:taku-enginner/vps-taka-study.git"
 set :deploy_to, "/var/www/html/hoge"

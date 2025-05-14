@@ -62,4 +62,4 @@
 
 
 # production環境固有の設定を記述
-server "taka-study.fun", user: "vpsuser", port: '50022', roles: %w{app db web}
+server "taka-study.fun", user: "vpsuser", port: "50022", roles: %w[app db web]
