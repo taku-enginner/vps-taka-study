@@ -43,3 +43,4 @@ set :branch, "main"
 set :rbenv_type, :user
 set :rbenv_ruby, '3.3.6'
 # set :rbenv_path, '/usr/local/rbenv'
+append :linked_dirs, '.bundle' # gemの保存先をシンボリックリンクにして、gemをリリース間で共有
