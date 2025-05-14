@@ -23,5 +23,5 @@ production:
   # mysqlの設定のところで入力した情報を以下に記述
   database: service1_db
   username: dbuser
-  password: cent_taku_enginner
+  password: vps-taka-study
   socket: /var/lib/mysql/mysql.sock
