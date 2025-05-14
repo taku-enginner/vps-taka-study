@@ -22,6 +22,6 @@ production:
   <<: *default
   # mysqlの設定のところで入力した情報を以下に記述
   database: service1_db
-  username: dbuser
+  username: rails_user
   password: vps-taka-study
   socket: /var/lib/mysql/mysql.sock
