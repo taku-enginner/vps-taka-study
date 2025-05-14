@@ -1,0 +1,26 @@
+services:
+  db:
+    image: mariadb:10.5.27
+    environment:
+      - MARIADB_ALLOW_EMPTY_ROOT_PASSWORD=yes
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    environment:
+      - RAILS_ENV=development
+    command: /bin/sh -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+volumes:
+  mariadb_data:
