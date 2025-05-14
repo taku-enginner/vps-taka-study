@@ -5,6 +5,9 @@ require "capistrano/deploy"
 require "capistrano/rbenv"
 require "capistrano/bundler"
 
+require "capistrano/puma"
+require "capistrano/puma/nginx"
+
 
 # Load the SCM plugin appropriate to your project:
 #
