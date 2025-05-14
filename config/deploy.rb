@@ -39,3 +39,7 @@ set :application, "vps-taka-study"
 set :repo_url, "git@github.com:taku-enginner/vps-taka-study.git"
 set :deploy_to, "/var/www/html/hoge"
 set :branch, "main"
+
+set :rbenv_type, :system
+set :rbenv_ruby, '3.3.6'
+set :rbenv_path, '/usr/local/rbenv'

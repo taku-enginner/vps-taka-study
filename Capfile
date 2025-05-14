@@ -1,3 +1,5 @@
+require "capistrano/rbenv"
+
 # Load DSL and set up stages
 require "capistrano/setup"
 

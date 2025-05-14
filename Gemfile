@@ -51,6 +51,7 @@ group :development do
   gem "capistrano"
   gem "ed25519"
   gem "bcrypt_pbkdf"
+  gem "capistrano-rbenv"
 end
 
 group :test do
