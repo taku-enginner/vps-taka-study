@@ -5,15 +5,13 @@ default: &default
   collation: utf8mb4_general_ci
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: root
+  username: rails_user
+  password: vps-taka-study
   host: localhost
 
 development:
   <<: *default
   database: service1_db
-  username: rails_user
-  password: vps-taka-study
-  host: localhost
 
 test:
   <<: *default
@@ -23,6 +21,3 @@ production:
   <<: *default
   # mysqlの設定のところで入力した情報を以下に記述
   database: service1_db
-  username: rails_user
-  password: vps-taka-study
-  socket: /var/lib/mysql/mysql.sock
