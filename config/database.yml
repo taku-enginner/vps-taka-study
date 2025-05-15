@@ -11,12 +11,12 @@ default: &default
 
 development:
   <<: *default
-  database: dev-vps-taka-study-db
+  database: dev_vps_taka_study_db
 
 test:
   <<: *default
-  database: test-vps-taka-study-db
+  database: test_vps_taka_study_db
 
 production:
   <<: *default
-  database: prod-vps-taka-study-db
+  database: prod_vps_taka_study_db
