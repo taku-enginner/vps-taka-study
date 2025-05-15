@@ -11,13 +11,12 @@ default: &default
 
 development:
   <<: *default
-  database: service1_db
+  database: dev-vps-taka-study-db
 
 test:
   <<: *default
-  database: app_name_test
+  database: test-vps-taka-study-db
 
 production:
   <<: *default
-  # mysqlの設定のところで入力した情報を以下に記述
-  database: service1_db
+  database: prod-vps-taka-study-db
