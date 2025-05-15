@@ -11,7 +11,8 @@ default: &default
 development:
   <<: *default
   database: service1_db
-  username: root
+  username: rails_user
+  password: vps-taka-study
   host: localhost
 
 test:
